@@ -1,7 +1,8 @@
 # Drug-Recommendation-System
 A data science project that analyzes patient drug reviews to recommend the most suitable medications for specific medical conditions. This end-to-end system combines data analysis, machine learning, visualization, and interactive interfaces built with Python.
 
-🚀 Features:-
+🚀
+# Features:-
 📊 Analyzes drug effectiveness based on satisfaction, ease of use, and price.
 🧠 Machine learning model (Random Forest) to predict drug effectiveness.
 🧮 Composite score-based recommendation engine.
@@ -19,16 +20,15 @@ Drug-Recommendation-System/
 ├── 5GUI_next.py            # Advanced GUI (in progress)
 ├── 7API_Frontend.py        # FastAPI and UI integration (coming soon)
 ├── API_Streamlit6.py       # Streamlit-based frontend (optional)
-│
 ├── drug_clean.csv          # Cleaned drug dataset
 ├── drug_effectiveness_model.pkl  # Trained ML model
-│
 ├── Bar_Graph_Effect_Prediction.png
 ├── Scatter_Graph_Drug_Effect.png
 └── Doc_drug_data.docx      # Supporting documentation
 
 
-🧠 How It Works
+🧠
+# How It Works
 Data Cleaning & Feature Engineering:
 Removes missing values and calculates a composite score using satisfaction, ease of use, and effectiveness.
 
