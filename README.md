@@ -1,16 +1,22 @@
-# Drug-Recommendation-System
-A data science project that analyzes patient drug reviews to recommend the most suitable medications for specific medical conditions. This end-to-end system combines data analysis, machine learning, visualization, and interactive interfaces built with Python.
+# 💊 Drug Recommendation System
 
-🚀
-# Features:-
-📊 Analyzes drug effectiveness based on satisfaction, ease of use, and price.
-🧠 Machine learning model (Random Forest) to predict drug effectiveness.
-🧮 Composite score-based recommendation engine.
-💡 Visual insights with bar and scatter plots.
-🖥️ GUI with Tkinter and optional Streamlit interface.
-🌐 API-ready backend with FastAPI (coming soon).
+An end-to-end data science project that analyzes patient drug reviews to recommend the most suitable medications for specific medical conditions. This system combines data preprocessing, machine learning, visual analytics, and interactive interfaces, all built using Python.
 
-📁 Project Structure
+---
+
+## 🚀 Key Features
+
+- **📊 Drug Effectiveness Analysis** — Evaluates drugs based on user satisfaction, ease of use, and price.
+- **🧠 Machine Learning Model** — Uses Random Forest Regressor to predict drug effectiveness.
+- **🧮 Recommendation Engine** — Ranks drugs using a composite scoring algorithm.
+- **📈 Visual Insights** — Bar and scatter plots visualize model performance and key metrics.
+- **🖥️ Interactive GUI** — Built with Tkinter (desktop) and optionally Streamlit (web).
+- **🌐 API-Ready Backend** — FastAPI integration in progress for web deployment.
+
+---
+
+## 📁 Project Structure
+
 Drug-Recommendation-System/
 │
 ├── 1main.py                # Composite score-based recommender
@@ -27,33 +33,39 @@ Drug-Recommendation-System/
 └── Doc_drug_data.docx      # Supporting documentation
 
 
-🧠
-# How It Works
-Data Cleaning & Feature Engineering:
-Removes missing values and calculates a composite score using satisfaction, ease of use, and effectiveness.
+---
 
-Drug Recommendation Logic:
-Filters by condition and ranks drugs using the composite score.
+## 🧠 How It Works
 
-Machine Learning Model:
+### 1. Data Cleaning & Feature Engineering
+- Handles missing values.
+- Computes a composite score from satisfaction, ease of use, and effectiveness.
 
-Trains a RandomForestRegressor to predict drug effectiveness.
+### 2. Drug Recommendation Logic
+- Filters drugs by condition.
+- Ranks them based on the composite score.
 
-Visualizes predictions vs. actual values and feature importance.
+### 3. Machine Learning Prediction
+- Trains a `RandomForestRegressor` model to predict effectiveness.
+- Visualizes predictions vs. actual values and feature importance.
 
-GUI Prediction:
+### 4. GUI Prediction
+- User selects a drug from a dropdown.
+- The model instantly predicts its effectiveness.
 
-User selects a drug from a dropdown.
+---
 
-The model predicts its effectiveness instantly.
+## 🔧 Tech Stack
 
-🔧 Tech Stack
-Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-Tkinter (Desktop GUI)
-Joblib (Model persistence)
-FastAPI + Streamlit (Planned web APIs/UI)
-VS Code (Development Environment)
+- **Languages & Libraries:** Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Model Persistence:** Joblib
+- **Desktop UI:** Tkinter
+- **Web UI (optional):** Streamlit
+- **Backend (upcoming):** FastAPI
+- **IDE:** Visual Studio Code
 
-📄 License
-This project is licensed under the MIT License.
+---
 
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
