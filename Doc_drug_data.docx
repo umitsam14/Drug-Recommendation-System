@@ -1,0 +1,94 @@
+**📄 Supporting Documentation — Drug Recommendation System**
+
+---
+
+**📌 Project Title:** Drug Recommendation System
+**📁 File:** `Doc_drug_data.docx`
+**📅 Last Updated:** May 2025
+
+---
+
+### 📂 Dataset Overview
+
+* **Filename:** `drug_clean.csv`
+* **Source:** Patient drug review dataset
+* **Description:** Cleaned and structured dataset with the following key columns:
+
+  * `drugName` – Name of the medication
+  * `condition` – Medical condition treated
+  * `review` – Text reviews by patients
+  * `rating` – Effectiveness rating (scale 1–10)
+  * `usefulCount` – Number of people who found the review helpful
+  * `sideEffects` – Noted side effects
+  * `satisfaction` – User satisfaction score
+  * `easeOfUse` – Ease of using the medication
+  * `price` – Price rating of the drug
+
+---
+
+### ⚙️ Methodology
+
+#### 1. **Data Cleaning**
+
+* Removed missing/null values
+* Removed duplicate records
+* Cleaned HTML tags and non-standard text from reviews
+
+#### 2. **Feature Engineering**
+
+* Composite score calculated as:
+
+  $$
+  \text{composite\_score} = \frac{{\text{satisfaction} + \text{easeOfUse} + \text{rating}}}{3}
+  $$
+
+* Encoded categorical values as needed
+
+#### 3. **Machine Learning**
+
+* **Model Used:** `RandomForestRegressor`
+* **Target Variable:** `rating` (effectiveness score)
+* **Evaluation Metrics:** R² score, MAE, and visual comparison of predicted vs. actual values
+
+#### 4. **Recommendation Logic**
+
+* Filters drugs based on condition entered by user
+* Ranks drugs using composite score
+* Returns top 5 drug suggestions with relevant scores
+
+---
+
+### 📦 File Descriptions
+
+| Filename                          | Description                                |
+| --------------------------------- | ------------------------------------------ |
+| `1main.py`                        | Recommender system using composite score   |
+| `2main_set.py`                    | Improved recommender with formatted output |
+| `3ml_model.py`                    | Builds and saves ML model                  |
+| `4GUI.py`                         | GUI using Tkinter                          |
+| `5GUI_next.py`                    | Enhanced GUI version (in progress)         |
+| `7API_Frontend.py`                | FastAPI integration for future deployment  |
+| `API_Streamlit6.py`               | Web-based Streamlit frontend (optional)    |
+| `drug_clean.csv`                  | Preprocessed dataset                       |
+| `drug_effectiveness_model.pkl`    | Serialized Random Forest model             |
+| `Bar_Graph_Effect_Prediction.png` | Visualizing model predictions              |
+| `Scatter_Graph_Drug_Effect.png`   | Actual vs. predicted drug effectiveness    |
+| `Doc_drug_data.docx`              | This documentation file                    |
+
+---
+
+### 👨‍💻 Usage Guide
+
+* Run `3ml_model.py` to train and save the Random Forest model.
+* Use `1main.py` or `2main_set.py` to recommend drugs based on user input.
+* Launch `4GUI.py` for an interactive desktop experience.
+* Visualizations can be found in the PNG files to assess model accuracy.
+
+---
+
+### 🧠 Summary
+
+This project delivers an intelligent drug recommendation system using real-world data and machine learning. It helps predict drug effectiveness and aids in better-informed healthcare decisions.
+
+---
+
