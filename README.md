@@ -17,7 +17,7 @@ An end-to-end data science project that analyzes patient drug reviews to recomme
 
 ## 📁 Project Structure
 
-Drug-Recommendation-System/
+<pre>Drug-Recommendation-System/
 │
 ├── 1main.py                # Composite score-based recommender
 ├── 2main_set.py            # Improved version with better output
@@ -30,7 +30,7 @@ Drug-Recommendation-System/
 ├── drug_effectiveness_model.pkl  # Trained ML model
 ├── Bar_Graph_Effect_Prediction.png
 ├── Scatter_Graph_Drug_Effect.png
-└── Doc_drug_data.docx      # Supporting documentation
+└── Doc_drug_data.docx      # Supporting documentation</pre>
 
 
 ---
